@@ -61,11 +61,19 @@ class _MyHomePageState extends State<MyHomePage> {
 
 //   @override
   Widget build(BuildContext context) {
+    // Scaffold === container (tailwind)
+    // kerangka dasar
+    //Scaffold biasanya digunakan bagian terluar dari struktur widget dalam suatu aplikasi dan menangani banyak fitur dan tata letak umum
     return Scaffold(
+      // AppBar biasanya berisi judul, ikon aksi, dan tombol navigasi.
+      // ditampilkan di bagian atas suatu "scaffold"
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
+      // body properti pada widget Scaffold.
+      // menetapkan isi utama dari tata letak halaman atau layar aplikasi.
+      // Isinya dapat berupa widget atau struktur tata letak yang kompleks, seperti Column, ListView, atau Container.
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
